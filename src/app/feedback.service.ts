@@ -15,7 +15,7 @@ export class FeedbackService {
     formData.append('feedback', feedback);
     formData.append('rating', rating.toString());
 
-    return axios.post('https://formsubmit.co/yourfood743@gmail.com', formData, {
+    return axios.post('https://formsubmit.co/yourkey', formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       }
