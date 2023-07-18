@@ -1,0 +1,184 @@
+ .bag-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  margin: auto;
+  margin-top: 5%;
+  width: 90%;
+  
+}
+
+.bag-container:hover {
+  transform: translateY(-5px) rotateX(10deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.bag-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.bag-table th,
+.bag-table td {
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+}
+
+.bag-table th {
+  font-weight: 500;
+  text-align: left;
+  font-size: 18px;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-button:hover {
+  background-color: #008CBA;
+}
+
+.quantity-container span {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.total-label {
+  font-weight: bold;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.order-button,
+.send-otp-button,
+.verify-button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover,
+.send-otp-button:hover,
+.verify-button:hover {
+  background-color: #005F7F;
+}
+
+
+.input-group {
+  display: flex;
+}
+
+.input-group input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  flex: 1;
+}
+
+.input-group button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+
+
+.email-form-container, .otp-container {
+  background-color: #f9f9f9;
+  
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  margin-top: 20px;
+  width:50%;
+}
+
+.email-form-container.show-form {
+  transform: translateY(0);
+}
+
+.email-form-container h3, .otp-container h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.email-form-container input[type="email"], .otp-container input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.email-form-container button, .otp-container button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ 
+}
+
+.email-form-container button:hover, .otp-container button:hover {
+  background-color: #005F7F;
+}
+
+
+

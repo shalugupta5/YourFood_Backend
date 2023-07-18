@@ -1,0 +1,57 @@
+
+ 
+<div class="bag-container">
+  <h2>My Bag</h2>
+  <table class="bag-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dish of bag">
+        <td>{{ dish.name }}</td>
+        <td>{{ dish.price }}</td>
+        <td>
+          <button class="quantity-button" (click)="decreaseQuantity(dish)">-</button>
+          {{ dish.quantity }}
+          <button class="quantity-button" (click)="increaseQuantity(dish)">+</button>
+        </td>
+        <td>{{ dish.price * dish.quantity }}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3" class="total-label">Total:</td>
+        <td>{{ getTotalPrice() }}</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <div *ngIf="showEmailForm" class="email-form-container" [class.show-form]="showEmailForm">
+    <h3>Enter Your Email Address</h3>
+    <input type="email" [(ngModel)]="email" placeholder="Email Address">
+    <button (click)="sendOTP()">Send OTP</button>
+  </div>
+
+  <div *ngIf="showOTPForm" class="otp-container" [class.show-form]="showOTPForm">
+    <h3>Verify OTP</h3>
+    <input type="text" [(ngModel)]="enteredOTP" placeholder="Enter OTP">
+    <button (click)="verifyOTP()">Verify OTP</button>
+  </div>
+
+  <div *ngIf="!showEmailForm && !showOTPForm">
+   
+  </div>
+
+  <button class="order-button" (click)="placeOrder()" *ngIf="!showEmailForm && !showOTPForm">
+    Order
+  </button>
+  
+</div>
+
+
+

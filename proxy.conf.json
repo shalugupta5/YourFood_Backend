@@ -1,0 +1,9 @@
+{
+    "/api": {
+      "target": "https://formspree.io",
+      "secure": true,
+      "changeOrigin": true,
+      "logLevel": "debug"
+    }
+  }
+  

@@ -1,0 +1,99 @@
+.update-user-dialog {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+    border: 2px solid #ccc;
+    opacity: 0.9;
+    align-items: center;
+  }
+  
+  .update-user-dialog:hover {
+    transform: translateY(-5px) rotateX(10deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* border-color: #da3cda; */
+    opacity: 1;
+  }
+  
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    /* margin-bottom: 10px; */
+    font-weight: 500;
+    font-size: 24px;
+    color: #333;
+    margin-top: 2%;
+    
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+  
+  label {
+    font-weight: 500;
+    font-size: 18px;
+
+  }
+  
+  input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: box-shadow 0.3s ease;
+    /* padding: 15px; */
+    margin-left: 5%;
+  }
+  
+  input:focus {
+    outline: none;
+    /* box-shadow: 0 0 5px #da3cda; */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 15px;
+  }
+  
+  .save-button,
+  .cancel-button {
+    background-color: #FF1493;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button{
+    background-color: #00c4cc;
+  }
+
+
+
+  .save-button:hover,
+  .cancel-button:hover {
+    /* background-color: #00c4cc; */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .save-button:active,
+  .cancel-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  

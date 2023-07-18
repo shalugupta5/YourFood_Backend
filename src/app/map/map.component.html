@@ -1,0 +1,18 @@
+<div class="select-location">Select location
+    <select [(ngModel)]="selectedLocation" (change)="onLocationChange()">
+      <!-- <option value="">Select a location</option> -->
+      <option value="delhi">Delhi</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="kolkata">Kolkata</option>
+      <option value="chennai">Chennai</option>
+      <option value="bengaluru">Bengaluru</option>
+      <option value="hyderabad">Hyderabad</option>
+      <option value="ahmedabad">Ahmedabad</option>
+      <option value="pune">Pune</option>
+      <option value="jaipur">Jaipur</option>
+      <option value="lucknow">Lucknow</option>
+    </select>
+  </div>
+  
+  <div id="map"></div>
+  

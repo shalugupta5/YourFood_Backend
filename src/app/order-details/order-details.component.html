@@ -1,0 +1,27 @@
+
+  
+
+  <div class="order-details-container">
+    <div>
+      <h2>Order Details</h2>
+      <div *ngIf="orderData">
+        <p><strong>Order ID:</strong> {{ orderData.id }}</p>
+        <p><strong>Customer Name:</strong> {{ orderData.customer_name }}</p>
+        <p><strong>Dish:</strong> {{ orderData.dish_name }}</p>
+        <p><strong>Total Price:</strong> {{ orderData.total_price }}</p>
+        <p><strong>Status:</strong> {{ orderData.status }}</p>
+        <p><strong>Tracking Status:</strong> {{ orderData.tracking_status }}</p>
+        <ul>
+          <li *ngFor="let dishName of orderData.dish_name">{{ dishName }}</li>
+        </ul>
+        <!-- Add more order details as needed -->
+      </div>
+      <div *ngIf="!orderData">
+        <p class="loading-message">Loading order details...</p>
+      </div>
+    </div>
+    <div class="animation-container">
+      <i class="fas fa-utensils animation-icon"></i>
+      <p class="animation-text">Your food is being prepared!</p>
+    </div>
+  </div>

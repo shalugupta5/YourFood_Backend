@@ -1,0 +1,25 @@
+<div class="table-container">
+    <table class="myorder-table">
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Customer Name</th>
+          <th>Dish</th>
+          <th>Total Price</th>
+          <th>Status</th>
+          <th>Tracking</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders" class="table-row">
+          <td>{{ order.id }}</td>
+          <td>{{ order.customer_name }}</td>
+          <td>{{ order.dish_name }}</td>
+          <td>{{ order.total_price }}</td>
+          <td class="status-cell {{ order.status }}">{{ order.status }}</td>
+          <td class="tracking-cell">{{ order.tracking_status }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,19 @@
+/* CSS for the dropdown */
+.select-location {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin-top: 2%;
+  }
+  
+  /* CSS for the map container */
+  #map {
+    width: 100%;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+  }
+  

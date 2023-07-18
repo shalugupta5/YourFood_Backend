@@ -1,0 +1,46 @@
+
+
+
+<div class="signup-form">
+  <div class="form-icon">
+    <i class="fas fa-user-plus"></i>
+  </div>
+  <h2>Create an Account</h2>
+  <div class="form-group">
+    <label for="username">
+      <i class="fas fa-user"></i>
+    </label>
+    <input type="text" id="username" [(ngModel)]="username" name="username" required placeholder="Username">
+  </div>
+  <div class="form-group">
+    <label for="password">
+      <i class="fas fa-lock"></i>
+    </label>
+    <input type="password" id="password" [(ngModel)]="password" name="password" required placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="role">
+      <i class="fas fa-users"></i>
+    </label>
+    <select id="role" [(ngModel)]="role" name="role" required>
+      <option value="user">User</option>
+      <option value="admin">Admin</option>
+    </select>
+  </div>
+  <div *ngIf="role === 'admin'" class="form-group">
+    <label for="token">
+      <i class="fas fa-key"></i>
+    </label>
+    <input type="password" id="token" [(ngModel)]="token" name="token" required placeholder="Token">
+  </div>
+  <div class="form-group">
+    <button class="signup-button" (click)="signup()">
+      <i class="fas fa-user-plus"></i> Sign up
+    </button>
+  </div>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+
+  
+
+</div>

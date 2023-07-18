@@ -1,0 +1,44 @@
+
+
+<h2>Welcome Admin</h2>
+
+<div class="table-container">
+  <div style="margin-bottom: 2%;">
+    <button style="margin-left: 2%;" (click)="addDish()">Add dish</button>
+ 
+    <button (click)="redirectToHistory()">Go to Orders</button>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Availability</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dish of dishes">
+        <td>{{ dish.name }}</td>
+        <td>{{ dish.price }}</td>
+        <td>{{ dish.quantity }}</td>
+        <td>
+          <span *ngIf="dish.availability; else outOfStock">In Stock</span>
+          <ng-template #outOfStock>Out of Stock</ng-template>
+        </td>
+        <td>
+          <button mat-icon-button color="primary" (click)="editDish(dish)">
+            <mat-icon mat-raised-button color="primary">edit</mat-icon>
+          </button>
+          <button mat-icon-button color="warn" (click)="deleteDish(dish)">
+            <mat-icon color="warn">delete</mat-icon>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+

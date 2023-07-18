@@ -1,0 +1,81 @@
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+    margin-top: 2%;
+  }
+  
+  .myorder-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    perspective: 1000px;
+  }
+  
+  .myorder-table th,
+  .myorder-table td {
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .myorder-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .myorder-table .table-row {
+    background-color: #fff;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+  }
+  
+  .myorder-table .table-row:hover {
+    background-color: #f7f7f7;
+    transform: translateY(-5px) rotateX(10deg);
+  }
+  
+  .myorder-table .status-cell {
+    font-weight: 500;
+  }
+  
+  .myorder-table .status-cell.pending {
+    color: red;
+  }
+  
+  .myorder-table .status-cell.delivered {
+    color: green;
+  }
+  
+  .myorder-table .status-cell.processing {
+    color: #f39c12;
+  }
+  
+  .myorder-table .tracking-cell {
+    text-transform: uppercase;
+  }
+  
+  /* Additional styles for visual enhancement */
+  .myorder-table {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .myorder-table th {
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .myorder-table td {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .myorder-table .table-row:first-child {
+    border-top: 2px solid #ddd;
+  }
+  
+  .myorder-table .table-row:last-child td {
+    border-bottom: none;
+  }
+  

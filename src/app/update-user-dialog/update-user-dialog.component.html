@@ -1,0 +1,15 @@
+
+
+<h2>Add Balance</h2>
+
+<form (ngSubmit)="onSave()">
+  <div>
+    <label for="wallet">Wallet</label>
+    <input type="number" id="wallet" name="wallet" [(ngModel)]="user.wallet" required>
+  </div>
+
+  <div class="button-container">
+    <button type="submit" class="save-button">Save</button>
+    <button type="button" class="cancel-button" (click)="onCancel()">Cancel</button>
+  </div>
+</form>
