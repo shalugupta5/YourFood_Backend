@@ -46,7 +46,7 @@ export class ChatbotComponent {
       const apiUrl = 'https://api.openai.com/v1/chat/completions';
       const headers = new HttpHeaders({
         'Content-Type': 'application/json',
-        'Authorization': 'Bearer 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' // Replace with your OpenAI API key
+        'Authorization': 'Bearer yourkey' // Replace with your OpenAI API key
       });
 
       const data = {
