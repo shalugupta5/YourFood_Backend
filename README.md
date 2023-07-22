@@ -118,7 +118,7 @@ We appreciate your interest in YourFood! If you have any questions, feedback, or
 
 - **Email**: For general inquiries or support, you can contact us at yourfood743@gmail.com. 📧
 
-- **LinkedIn**: Connect with us on LinkedIn to stay updated on the latest news and announcements. [Your LinkedIn Profile](https://www.linkedin.com/in/km-shalu-gupta-110207247/) 🔗
+- **LinkedIn**: Connect with us on LinkedIn to stay updated on the latest news and announcements. (https://www.linkedin.com/in/km-shalu-gupta-110207247/) 🔗
 
 ---
 
