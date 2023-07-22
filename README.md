@@ -46,11 +46,6 @@ Whether you're a food lover seeking new taste experiences or a busy individual c
 
 ---
 
-<p align="center">
-  <b>Delight your taste buds with YourFood's exquisite cuisines, served fresh to your doorstep. Experience the ultimate food ordering platform that caters to your cravings and culinary desires. 🚀🍽️</b>
-</p>
-
----
 
 ## Features
 
@@ -75,6 +70,8 @@ Whether you're a food lover seeking new taste experiences or a busy individual c
 ## Demo
 
 https://drive.google.com/file/d/1mgEywyLpuzQ82F20rfE0KSRbXbaUAyM6/view?usp=sharing
+
+---
 
 ## Usage
 
