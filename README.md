@@ -26,6 +26,9 @@ Our robust backend is powered by **Python** and **Flask**, ensuring reliability 
 ### Frontend Innovation
 For an engaging user interface, we utilize **Angular CLI**, **Bootstrap**, **HTML**, **CSS** and **Typescript**, creating a smooth and interactive user experience.
 
+### Database
+**MySQL**
+
 ### Seamless Integrations
 To enhance functionality, we've integrated third-party APIs such as:
 - **SMTP servers** for communication
