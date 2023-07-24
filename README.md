@@ -24,7 +24,7 @@ YourFood is a user-friendly platform designed to make your food ordering process
 Our robust backend is powered by **Python** and **Flask**, ensuring reliability and performance in handling your orders.
 
 ### Frontend Innovation
-For an engaging user interface, we utilize **Angular CLI**, **Bootstrap**, and **Typescript**, creating a smooth and interactive user experience.
+For an engaging user interface, we utilize **Angular CLI**, **Bootstrap**, **HTML**, **CSS** and **Typescript**, creating a smooth and interactive user experience.
 
 ### Seamless Integrations
 To enhance functionality, we've integrated third-party APIs such as:
